@@ -1,28 +1,42 @@
-REMIX DEFAULT WORKSPACE
+Project Description
+This project is a decentralized funding platform on the Ethereum blockchain. It allows users to create projects and receive funding from other users interested in supporting their initiatives.
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+Implemented Functionalities
+Creation of contracts with state variables.
+fundProject function to allow users to send ether to a project.
+changeProjectState function to change the state of a project.
+Use of modifiers to restrict certain actions.
+Use of events to log important actions.
+Validations to ensure system integrity and security.
+Storage of project information in a struct.
+Use of an enum to define the possible states of a project.
+Storage of multiple projects using an array and a mapping.
+Implementation Details
+State Variables
+projects: Array to store the created projects.
+contributions: Mapping to store the contributions made to each project.
+Main Functions
+createProject: Function to initialize the data of a new project.
+fundProject: Function for users to send ether to a project.
+changeProjectState: Function to change the state of a project.
+Modifiers
+onlyAuthor: Modifier to restrict certain actions only to the author of the project.
+notAuthor: Modifier to prevent the author of the project from making contributions to their own project.
+Events
+ProjectFunded: Logged when a contribution is made to a project.
+ProjectStateChanged: Logged when the state of a project is changed.
+Development Environment Requirements
+Solidity >=0.7.0 <0.9.0
+Truffle (optional for testing and development)
+Usage Guide
+Create a Project: Use the createProject function to initialize a new project with the required information.
+Fund a Project: Users can send ether to the project using the fundProject function.
+Change Project State: The project author can change the state using the changeProjectState function.
+Contributions
+Contributions are welcome. If you want to contribute to this project, follow these steps:
 
-This workspace contains 3 directories:
-
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
-
-SCRIPTS
-
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
-
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
-
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
-
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
-
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+Fork the repository.
+Create a new branch (git checkout -b feature/feature-name).
+Make your changes and commit (git commit -am 'Add new feature').
+Push the branch (git push origin feature/feature-name).
+Open a Pull Request.
