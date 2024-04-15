@@ -1,3 +1,4 @@
+
 # Project Description 
 
 This project is a decentralized funding platform on the Ethereum blockchain. It allows users to create projects and receive funding from other users interested in supporting their initiatives.
@@ -57,3 +58,7 @@ Contributions are welcome. If you want to contribute to this project, follow the
 3. Make your changes and commit (`git commit -am 'Add new feature'`).
 4. Push the branch (`git push origin feature/feature-name`).
 5. Open a Pull Request.
+
+
+A brief description of what this project does and who it's for
+
