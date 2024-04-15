@@ -1,4 +1,4 @@
-# Project Description
+# Project Description 
 
 This project is a decentralized funding platform on the Ethereum blockchain. It allows users to create projects and receive funding from other users interested in supporting their initiatives.
 
